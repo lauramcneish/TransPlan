@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+	<link rel="stylesheet" href="nice_select.0/css/nice-select.css">
+	<link rel="stylesheet" href="assets/styles.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<div class="viewport">
+		<div class="wrap">
+			<div class="section section1 left2">
+				<div id="menu">
+				</div>
+				<div id="landing">
+					<div id="intro">
+						<p>Welcome to <span style="font-family:NationalBold">TransPlan</span> 
+						where you can plan your transport cost's for your trip here in New Zealand.</p>
+					</div>
+					<div id="start_button">
+						<p><span>Lets Get Started </span><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+					</div>	
+				</div>
+			</div>
+			<div class="section section2 left1">
+				<div id="menu_2">
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
+				</div>
+				<div id="step_1">
+					<form action="#" method="post">
+						<div id="step_1A"><p>How many of you?</p>
+						        <select name="people" class="wide">
+						                <option value="1">1</option>
+						                <option value="2">2</option>
+						                <option value="3">3</option>
+						                <option value="4">4</option>
+						                <option value="5">5</option>
+						                <option value="6">6</option>
+						        </select>
+						
+						</div>
+						       <div id="step_1B"><p>For how long?</p>
+						        <select name="days" class="wide">
+						                <option value="1">1 Day</option>
+						                <option value="2">2 Days</option>
+						                <option value="3">3 Days</option>
+						                <option value="4">4 Days</option>
+						                <option value="5">5 Days</option>
+						                 <option value="6">6 Days</option>
+						                <option value="7">7 Days</option>
+						                <option value="8">8 Days</option>
+						                <option value="9">9 Days</option>
+						                <option value="10">10 Days</option>
+						                 <option value="11">11 Days</option>
+						                <option value="12">12 Days</option>
+						                <option value="13">13 Days</option>
+						                <option value="14">14 Days</option>
+						                <option value="15">15 Days</option>
+						        </select>
+						
+						 			
+						</div>
+						<div id="submit_1">
+							<button class="button1" id="show-transport" type="submit"><span>Show Transport Options </span><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="section section3 show">
+				<div id="menu_2">
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
+				</div>
+				<div id="step_2">
+					<div id="motorcycle" data-name="Motorcycle" class="disabled transport_option">
+						<h1>Motorcycle</h1>
+						<img src="assets/motorcycle.svg" alt="">
+						<p>1 Person</p>
+						<p>$109 per day</p>
+					</div>
+					<div id="small_car" data-name="Small Car" class="disabled transport_option">
+					    <h1>Small Car</h1>
+						<img src="assets/small_car.svg" alt="">
+						<p>1-2 People</p>
+						<p>$129 per day</p>	
+					</div>
+					<div id="large_car" data-name="Large Car" class="disabled transport_option">
+					  <h1>Large Car</h1>
+						<img src="assets/large_car.svg" alt="">
+						<p>1-5 People</p>
+						<p>$144 per day</p>	
+					</div>
+					<div id="motorhome" data-name="Motorhome" class="disabled transport_option">
+						<h1>Motorhome</h1>
+						<img src="assets/motorhome.svg" alt="">
+						<p>2-6 People</p>
+						<p>$200 per day</p>
+					</div>
+					<div id="submit_2">
+						<button id="add_distance" class="button2" disabled type="submit"><span>Add in distance</span><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="section section4 right1">
+				<div id="menu_2">
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
+				</div>
+				<div id="step_1">
+					<form action="#" method="post">
+						<div id="step_1A"><p>Starting Destination</p>
+						        <select name="city" class="wide">
+						                <option value="Auckland">Auckland</option>
+						                <option value="Wellington">Wellington</option>
+						                <option value="Dunedin">Dunedin</option>
+						        </select>
+						
+						</div>
+						       <div id="step_1B"><p>Ending Destination</p>
+						        <select name="Auckland" class="distances wide">
+						                <option value="421.5">Cape Reinga (421.5km)</option>
+						                <option value="181">Coromandel (181km)</option>
+						                <option value="227">Bay of Islands (227km)</option>
+						                <option value="238">Rotorua (238km)</option>
+						                 <option value="174">Waikato (174km)</option>
+						        </select>
+						         <select name="Wellington" class="distances wide hidden">
+						                <option value="287">Hawkes Bay (287km)</option>
+						                <option value="174">Marlborough (174km)</option>
+						                <option value="80.3">Martinborough (80.3km)</option>
+						                <option value="209">Nelson (209km)</option>
+						                <option value="140">Palmerston North (140km)</option>
+						        </select>
+						        <select name="Dunedin" class="distances wide hidden">
+						                <option value="248">Central Otago (248km)</option>
+						                <option value="337">Christchurch (337km)</option>
+						                <option value="205">Invercargill (205km)</option>
+						                <option value="300">Queenstown (300km)</option>
+						                 <option value="276">Wanaka (276km)</option>
+						        </select>	 			
+						</div>
+						<div id="submit_1">
+							<button class="button1 calculate"><span>Calculate Cost</span><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="section section5 right2">
+				<div id="menu_2">
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
+				</div>
+				<div id="landing">
+					<div id="intro">
+						<p>With a <span style="font-family:NationalBold" id="final-transport">Transport Option</span> 
+						going <span style="font-family:NationalBold" id="final-distance">Distance</span> your cost will be 
+						<span style="font-family:NationalBold" id="final-cost">Cost</span> </p>
+					</div>
+					<div id="start_button1">
+						<p><span>Start Over</span><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="nice_select.0/js/jquery.js"></script> 
+	<script src="nice_select.0/js/jquery.nice-select.js"></script>
+	<script src="assets/javascript.js"></script>
+</body>
+</html>

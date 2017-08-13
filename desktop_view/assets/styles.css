@@ -1,0 +1,93 @@
+/* 
+Medium Blue #576682 
+Light Blue #dce2ed
+Light Light Blue #eceff5
+Dark Blue #27334a  
+*/
+@font-face {
+    font-family: NationalBook;
+    src: url(National/National-Book.otf);
+}
+@font-face {
+    font-family: NationalBold;
+    src: url(National/National-Bold.otf);
+}
+@font-face {
+    font-family: NationalMedium;
+    src: url(National/National-Medium.otf);
+}
+@font-face {
+    font-family: NationalRegular;
+    src: url(National/National-Regular.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+
+#menu {
+	min-height: 1em;
+	min-width: 100%;
+	background-color: #27334a;
+}
+
+
+#text {
+	z-index: 3;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 0;
+    width: 940px;
+    margin-left: -470px;
+}
+
+
+#text h1 {
+	color: white;
+}
+
+
+
+
+#intro {
+	background-color: #576682;
+	min-width: 100%;
+	min-height: 100vh;
+}
+
+#calculator {
+	min-width: 100%;
+	min-height: 100vh;
+}
+#slider {
+	min-width: 100%;
+	min-height: 100vh;
+	background-color: #dce2ed;
+}
+#end {
+	min-height: 5em;
+	min-width: 100%;
+	background-color: #27334a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
